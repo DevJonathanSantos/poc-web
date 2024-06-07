@@ -12,7 +12,7 @@ export default function Home() {
   const [requests, setRequests] = useState([]);
 
   useEffect(() => {
-    loadRequests(lastId);
+    loadRequests(0);
   }, [])
 
   async function loadRequests(lastId) {
